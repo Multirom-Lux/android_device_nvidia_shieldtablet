@@ -65,9 +65,9 @@ MAX_EGL_CACHE_SIZE := 4194304
 MAX_EGL_CACHE_ENTRY_SIZE := 262144
 
 # Recovery
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_RECOVERY_DEVICE_DIRS += device/nvidia/shieldtablet
-TARGET_RECOVERY_FSTAB := device/nvidia/shieldtablet/rootdir/etc/fstab.tn8
+TARGET_RECOVERY_FSTAB := device/nvidia/shieldtablet/initfiles/fstab.tn8
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
